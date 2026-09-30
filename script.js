@@ -39,10 +39,17 @@
     var banner = document.getElementById("banner");
     banner.classList.add("has-image");
     banner.innerHTML = "";
-    banner.appendChild(el("img", {
+    var img = el("img", {
       src: E.bannerImage,
       alt: [E.name, E.theme, E.dates, E.location].filter(Boolean).join(" · "),
-    }));
+    });
+    if (E.website) {
+      var bl = el("a", { href: E.website }, [img]);
+      openNew(bl);
+      banner.appendChild(bl);
+    } else {
+      banner.appendChild(img);
+    }
   }
 
   // Pricing cards

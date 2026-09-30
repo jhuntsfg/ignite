@@ -15,7 +15,7 @@ window.SITE = {
     website: "https://ignite-event.com",
     // Optional: path to the official event banner image (e.g. "assets/ignite-banner.jpg").
     // Leave empty to use the built-in text banner.
-    bannerImage: "",
+    bannerImage: "assets/ignite-2027-banner.webp",
   },
 
   // Pricing cards. Confirm prices and deadlines before launch. (TODO)
