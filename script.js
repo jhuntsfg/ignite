@@ -55,14 +55,25 @@
     (c.features || []).forEach(function (f) { ul.appendChild(el("li", { text: f })); });
     var price = el("p", { class: "price", text: c.price });
     if (c.priceSuffix) price.appendChild(el("span", { text: c.priceSuffix }));
-    var a = el("a", { class: "btn", href: c.url || "#", text: c.cta });
-    openNew(a);
+    var a, msg = null;
+    if (c.url && c.url !== "#") {
+      a = el("a", { class: "btn", href: c.url, text: c.cta });
+      openNew(a);
+    } else {
+      // No link yet: show a short note instead of going anywhere
+      a = el("button", { class: "btn", type: "button", text: c.cta });
+      msg = el("p", { class: "soon", role: "status", "aria-live": "polite" });
+      a.addEventListener("click", function () {
+        msg.textContent = c.comingSoon || "Coming soon!";
+      });
+    }
     cards.appendChild(el("article", { class: "card" }, [
       el("h3", { text: c.title }),
       price,
       el("p", { class: "note", text: c.note || "" }),
       ul,
       a,
+      msg,
     ]));
   });
 

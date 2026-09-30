@@ -66,6 +66,8 @@ h1, h2, h3, p { margin: 0; }
 .card ul { text-align: left; font-size: .7rem; color: #444; padding-left: 1.2em; margin: 0 0 1.4em; flex: 1; }
 .card li { margin-bottom: .55em; }
 .card .btn { align-self: center; }
+.card .soon { font-size: .75rem; color: var(--fire-1); font-weight: 700; margin-top: .8em; min-height: 1em; }
+.card .soon:empty { display: none; }
 
 /* FAQ */
 .faq-box { background: var(--card); color: var(--ink); text-align: center; padding: 20px 24px 20px; margin: 15px -60px 0; border-radius: 2px; }

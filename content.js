@@ -30,7 +30,10 @@ window.SITE = {
         "Limited number available at this price",
       ],
       cta: "Get Your Ticket",
-      url: "#", // TODO: ticket purchase link
+      // TODO: paste the Jotform link here once payments are set up.
+      // While empty, the button shows a "coming soon" note instead of navigating.
+      url: "",
+      comingSoon: "Ticket checkout opens soon. Check back shortly!",
     },
     {
       title: "Hilton Anatole Room Block",
