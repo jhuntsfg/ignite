@@ -28,10 +28,6 @@
     a.textContent = E.website.replace(/^https?:\/\//, "").replace(/\/$/, "");
     openNew(a);
   });
-  if (S.ownerFirstName) {
-    document.getElementById("intro-sub").textContent =
-      "This is " + S.ownerFirstName + "'s FAVORITE event of the year, and we can't wait to see all of you there!";
-  }
   document.getElementById("year").textContent = new Date().getFullYear();
 
   // Optional official banner image replaces the text banner

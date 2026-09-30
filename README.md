@@ -4,10 +4,10 @@ A one-page event site inviting Hunt Agency agents to IGNITE 2027 (March 1–3, 2
 
 ## Editing content
 
-Everything lives in **`content.js`**: agency name, owner's first name, event details, card prices/bullets/links, the video, and FAQs. Search for `TODO` to find what still needs a real value (ticket link, room-block link, video, owner name).
+Everything lives in **`content.js`**: agency name, event details, card prices/bullets/links, the video, and FAQs. Search for `TODO` to find what still needs a real value (currently just the ticket purchase link).
 
 - **Banner image:** to use the official event graphic, drop it in `assets/` and set `event.bannerImage` (e.g. `"assets/ignite-banner.jpg"`). Otherwise a built-in text banner is shown.
-- **Video:** set `video` to a Wistia embed URL or bare Wistia ID, a YouTube/Vimeo embed URL, or a local `.mp4` in `assets/`.
+- **Video:** set `video` to a Wistia embed URL or bare Wistia ID, a YouTube/Vimeo embed URL, or a local `.mp4` in `assets/` (currently `assets/ignite27-teaser.mp4`).
 
 ## Running locally
 

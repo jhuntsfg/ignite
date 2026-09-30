@@ -5,7 +5,6 @@
  */
 window.SITE = {
   agencyName: "Hunt Agency",
-  ownerFirstName: "", // e.g. "Jon" -> "This is Jon's favorite event..." (TODO)
 
   event: {
     name: "IGNITE 2027",
@@ -18,7 +17,7 @@ window.SITE = {
     bannerImage: "assets/ignite-2027-banner.webp",
   },
 
-  // Pricing cards. Confirm prices and deadlines before launch. (TODO)
+  // Pricing cards
   cards: [
     {
       title: "General Admission Ticket",
@@ -45,7 +44,7 @@ window.SITE = {
         "Block closes February 8",
       ],
       cta: "Book Your Room",
-      url: "#", // TODO: room block booking link
+      url: "https://book.passkey.com/event/51278035/owner/863/home",
     },
   ],
 
@@ -54,7 +53,7 @@ window.SITE = {
   //   YouTube: https://www.youtube.com/embed/VIDEO_ID
   //   Vimeo:   https://player.vimeo.com/video/VIDEO_ID
   //   Local:   "assets/invite.mp4"
-  video: "", // TODO
+  video: "assets/ignite27-teaser.mp4",
 
   faq: [
     {
