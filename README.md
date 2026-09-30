@@ -1,12 +1,13 @@
-# Hunt Agency — IGNITE
+# Hunt Agency — IGNITE 2027
 
-A static onboarding hub that takes new agents from "new agent" to "new writer": welcome video, a step-by-step roadmap with saved progress, IGNITE conference session replays, a weekly small-group Q&A schedule, a resource library, and an FAQ.
+A one-page event site inviting Hunt Agency agents to IGNITE 2027 (March 1–3, 2027, Dallas, Texas): event banner, ticket and hotel room-block cards, an FAQ, and a video message from agency leadership.
 
 ## Editing content
 
-Everything you'll want to change lives in **`content.js`**: agency name, contact email, welcome video, roadmap steps, session videos, Q&A days/time/booking link, resource links, and FAQ. Search for `TODO` and `"#"` to find placeholders.
+Everything lives in **`content.js`**: agency name, owner's first name, event details, card prices/bullets/links, the video, and FAQs. Search for `TODO` to find what still needs a real value (ticket link, room-block link, video, owner name).
 
-Videos take a YouTube (`https://www.youtube.com/embed/ID`) or Vimeo (`https://player.vimeo.com/video/ID`) embed URL. An empty value shows a "Video coming soon" card.
+- **Banner image:** to use the official event graphic, drop it in `assets/` and set `event.bannerImage` (e.g. `"assets/ignite-banner.jpg"`). Otherwise a built-in text banner is shown.
+- **Video:** set `video` to a Wistia embed URL or bare Wistia ID, a YouTube/Vimeo embed URL, or a local `.mp4` in `assets/`.
 
 ## Running locally
 
@@ -18,4 +19,4 @@ python3 -m http.server 8000
 
 ## Deploying
 
-Upload the folder to any static host (GitHub Pages, Netlify, Vercel, or an existing site builder that accepts custom HTML).
+Upload the folder to any static host (GitHub Pages, Netlify, Vercel), or paste the HTML/CSS/JS into a custom-code page on your site builder.

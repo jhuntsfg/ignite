@@ -3,129 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IGNITE | Hunt Agency</title>
-  <meta name="description" content="IGNITE: the Hunt Agency roadmap from new agent to new writer. Training, conference sessions, weekly Q&A, and resources.">
+  <title>IGNITE 2027 | Hunt Agency</title>
+  <meta name="description" content="Join the Hunt Agency at IGNITE 2027, March 1–3 in Dallas, Texas. Get your ticket and book your room.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Anton&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="Hunt Agency home">
-        <span class="brand-mark" aria-hidden="true">H</span>
-        <span class="brand-name" data-agency>Hunt Agency</span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="nav-links" class="nav-links">
-        <a href="#start">Start Here</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#sessions">IGNITE Sessions</a>
-        <a href="#qa">Weekly Q&amp;A</a>
-        <a href="#resources">Resources</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-sm" data-booking href="#">Join a Q&amp;A</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <p class="eyebrow"><span data-agency>Hunt Agency</span> presents</p>
-        <h1 class="hero-title">IGNITE</h1>
-        <p class="hero-sub">From new agent to new writer. Everything you need to launch your insurance business, all in one place.</p>
-        <div class="hero-ctas">
-          <a class="btn" href="#roadmap">Start the roadmap</a>
-          <a class="btn btn-ghost" href="#sessions">Watch IGNITE sessions</a>
-        </div>
+  <main>
+    <header class="banner" id="banner">
+      <div class="banner-text">
+        <p class="banner-kicker">Are you ready to</p>
+        <p class="banner-headline">Go the Distance?</p>
+        <h1 class="banner-event"><span data-event="name">IGNITE 2027</span></h1>
+        <p class="banner-theme" data-event="theme">Going the Distance</p>
+        <p class="banner-dates" data-event="dates">March 1–3, 2027</p>
+        <p class="banner-location" data-event="location">Dallas, Texas</p>
+        <a class="banner-site" data-event-site href="#"></a>
       </div>
+    </header>
+
+    <section class="intro">
+      <h2>The <span data-agency>Hunt Agency</span> Shows Up BIG for IGNITE</h2>
+      <p id="intro-sub">This is our favorite event of the year, and we can't wait to see all of you there!</p>
     </section>
 
-    <section id="start" class="section">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Start here</p>
-          <h2>Welcome to the team</h2>
-          <p>You made a great decision. This page is your home base for the first weeks of your career: follow the roadmap step by step, watch the IGNITE conference sessions, and bring your questions to our small-group Q&amp;A calls.</p>
-          <p>Nobody builds this business alone. Lean on your mentor, show up to training, and take action every day.</p>
-        </div>
-        <div class="video-frame" data-video="welcome"></div>
-      </div>
+    <section class="cards" id="cards" aria-label="Tickets and hotel"></section>
+
+    <section class="faq-box" id="faq">
+      <h2>FAQs</h2>
+      <p class="sub">Get Your Questions Answered</p>
+      <button class="btn" id="faq-toggle" aria-expanded="false" aria-controls="faq-list">Check Out the FAQs</button>
+      <div class="faq-list" id="faq-list" hidden></div>
     </section>
 
-    <section id="roadmap" class="section section-alt">
-      <div class="container">
-        <p class="eyebrow">The roadmap</p>
-        <h2>New agent → new writer</h2>
-        <p class="lead">Check off each step as you finish it. Your progress is saved in this browser.</p>
-        <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
-        <p class="progress-label" id="progress-label"></p>
-        <ol class="roadmap" id="roadmap-list"></ol>
-      </div>
-    </section>
-
-    <section id="sessions" class="section">
-      <div class="container">
-        <p class="eyebrow">IGNITE conference</p>
-        <h2>Session replays</h2>
-        <p class="lead">Catch up on the sessions from our IGNITE conference, from day-one mindset to building a team.</p>
-        <div class="session-grid" id="session-grid"></div>
-      </div>
-    </section>
-
-    <section id="qa" class="section section-dark">
-      <div class="container split">
-        <div>
-          <p class="eyebrow">Weekly Q&amp;A</p>
-          <h2>Small-group meet &amp; greets</h2>
-          <p>Meet <span data-owner>the leadership team</span> and get your questions answered live. Groups are capped at <strong data-seats>5</strong> agents, so everyone gets a chance to talk.</p>
-          <a class="btn" data-booking href="#">Reserve your seat</a>
-        </div>
-        <ul class="schedule" id="schedule"></ul>
-      </div>
-    </section>
-
-    <section id="resources" class="section">
-      <div class="container">
-        <p class="eyebrow">Resource library</p>
-        <h2>Tools &amp; links</h2>
-        <div class="resource-grid" id="resource-grid"></div>
-      </div>
-    </section>
-
-    <section id="faq" class="section section-alt">
-      <div class="container narrow">
-        <p class="eyebrow">FAQ</p>
-        <h2>Common questions</h2>
-        <div class="faq" id="faq-list"></div>
-      </div>
-    </section>
-
-    <section class="section cta-band">
-      <div class="container cta-inner">
-        <h2>Ready to write your first policy?</h2>
-        <p>Pick your next step on the roadmap and get after it today.</p>
-        <a class="btn" href="#roadmap">Back to the roadmap</a>
-      </div>
-    </section>
+    <section class="video" id="video" aria-label="Message from the Hunt Agency"></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="brand">
-          <span class="brand-mark" aria-hidden="true">H</span>
-          <span class="brand-name" data-agency>Hunt Agency</span>
-        </div>
-        <p class="muted">Questions? <a data-email href="#"></a></p>
-      </div>
-      <p class="muted small">&copy; <span id="year"></span> <span data-agency>Hunt Agency</span>. All rights reserved. Income and results vary and are not guaranteed.</p>
-    </div>
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> <span data-agency>Hunt Agency</span>. IGNITE is an independent event; see the official event site for full details.</p>
   </footer>
 
   <script src="content.js"></script>

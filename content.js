@@ -1,111 +1,81 @@
 /*
- * Hunt Agency — IGNITE site content.
- * Edit this file to update videos, links, and schedule. No build step needed.
- *
- * Video URLs: paste a YouTube or Vimeo *embed* URL, e.g.
- *   https://www.youtube.com/embed/VIDEO_ID
- *   https://player.vimeo.com/video/VIDEO_ID
- * Leave `video` empty ("") to show a "Coming soon" placeholder.
+ * Hunt Agency — IGNITE 2027 page content.
+ * Edit this file to update prices, links, video, and FAQs. No build step needed.
+ * Search for TODO to find everything that still needs a real value.
  */
 window.SITE = {
   agencyName: "Hunt Agency",
-  ownerName: "the Hunt Agency leadership team",
-  contactEmail: "hello@huntagency.com", // TODO: replace with the real address
+  ownerFirstName: "", // e.g. "Jon" -> "This is Jon's favorite event..." (TODO)
 
-  welcomeVideo: "", // TODO: welcome message embed URL
-
-  // Weekly small-group Q&A
-  meetAndGreet: {
-    days: ["Monday", "Wednesday", "Friday"],
-    time: "10:00 AM ET",
-    maxSeats: 5,
-    bookingUrl: "#", // TODO: Calendly / Zoom registration link
+  event: {
+    name: "IGNITE 2027",
+    theme: "Going the Distance",
+    dates: "March 1–3, 2027",
+    location: "Dallas, Texas",
+    website: "https://ignite-event.com",
+    // Optional: path to the official event banner image (e.g. "assets/ignite-banner.jpg").
+    // Leave empty to use the built-in text banner.
+    bannerImage: "",
   },
 
-  // New agent -> new writer roadmap. `link` is optional.
-  roadmap: [
+  // Pricing cards. Confirm prices and deadlines before launch. (TODO)
+  cards: [
     {
-      title: "Get licensed",
-      text: "Complete your pre-licensing course, pass the state exam, and apply for your resident license.",
-      link: { label: "Licensing guide", url: "#" },
+      title: "General Admission Ticket",
+      price: "$145",
+      note: "What's included",
+      features: [
+        "Full access to all three days",
+        "All fees included in the price",
+        "Non-transferable and non-refundable",
+        "Limited number available at this price",
+      ],
+      cta: "Get Your Ticket",
+      url: "#", // TODO: ticket purchase link
     },
     {
-      title: "Get contracted",
-      text: "Submit your contracting paperwork, E&O, and direct deposit so carriers can pay you.",
-      link: { label: "Contracting checklist", url: "#" },
-    },
-    {
-      title: "Set up your systems",
-      text: "Log in to the CRM, calendar, and dialer. Join the team chat and add the training calendar.",
-      link: { label: "Tech setup", url: "#" },
-    },
-    {
-      title: "Learn the core products",
-      text: "Work through the product training for mortgage protection, final expense, term, and IUL.",
-      link: { label: "Product training", url: "#" },
-    },
-    {
-      title: "Practice the presentation",
-      text: "Role-play the full appointment with your mentor until you can run it start to finish.",
-      link: { label: "Scripts & role-play", url: "#" },
-    },
-    {
-      title: "Book your first appointments",
-      text: "Work your leads, set appointments, and shadow a senior agent on live calls.",
-      link: null,
-    },
-    {
-      title: "Write your first policy",
-      text: "Submit your first application and ring the bell. You're officially a writer.",
-      link: null,
+      title: "Hilton Anatole Room Block",
+      price: "$279",
+      priceSuffix: "/night",
+      note: "What's included",
+      features: [
+        "Stay at the event hotel",
+        "Standard rate is $355/night",
+        "Split the room with a teammate",
+        "Block closes February 8",
+      ],
+      cta: "Book Your Room",
+      url: "#", // TODO: room block booking link
     },
   ],
 
-  // IGNITE conference sessions
-  sessions: [
-    { title: "Opening Keynote: Why You're Here", speaker: "Agency Leadership", length: "", video: "" },
-    { title: "Your First 30 Days", speaker: "Top New Writer Panel", length: "", video: "" },
-    { title: "Lead Management That Works", speaker: "Senior Agent", length: "", video: "" },
-    { title: "Running a Great Appointment", speaker: "Field Trainer", length: "", video: "" },
-    { title: "Objections & Follow-Up", speaker: "Senior Agent", length: "", video: "" },
-    { title: "Building Your Team", speaker: "Agency Owner", length: "", video: "" },
-  ],
-
-  // Resource library
-  resources: [
-    { group: "Getting started", items: [
-      { label: "New agent checklist", url: "#" },
-      { label: "Licensing course sign-up", url: "#" },
-      { label: "Contracting portal", url: "#" },
-    ]},
-    { group: "Tools", items: [
-      { label: "CRM login", url: "#" },
-      { label: "Quoting tool", url: "#" },
-      { label: "Team calendar", url: "#" },
-    ]},
-    { group: "Training", items: [
-      { label: "Product training library", url: "#" },
-      { label: "Scripts & rebuttals", url: "#" },
-      { label: "Weekly training call recordings", url: "#" },
-    ]},
-  ],
+  // Owner video. Accepts:
+  //   Wistia:  https://fast.wistia.net/embed/iframe/VIDEO_ID  (or just the ID, e.g. "abc123xyz0")
+  //   YouTube: https://www.youtube.com/embed/VIDEO_ID
+  //   Vimeo:   https://player.vimeo.com/video/VIDEO_ID
+  //   Local:   "assets/invite.mp4"
+  video: "", // TODO
 
   faq: [
     {
-      q: "Do I need to be licensed before I start?",
-      a: "No. We'll walk you through getting licensed, and you can start training while you study.",
+      q: "When and where is IGNITE 2027?",
+      a: "March 1–3, 2027, in Dallas, Texas. The agency room block is at the Hilton Anatole.",
     },
     {
-      q: "How do I get paid?",
-      a: "You're contracted directly with the carriers, and each carrier pays you when your policies are issued.",
+      q: "Can I get a refund or give my ticket to someone else?",
+      a: "No. Tickets are non-refundable and can't be transferred, so make sure you can attend before you buy.",
     },
     {
-      q: "Can I work part-time?",
-      a: "Yes. Many of our agents start part-time and move to full-time as their business grows. You set your own schedule.",
+      q: "Do I have to stay at the Hilton Anatole?",
+      a: "No, but it's the easiest option: you'll be steps from every session and the rest of the team. The discounted room block closes February 8.",
     },
     {
-      q: "Who do I go to with questions?",
-      a: "Your upline mentor is your first contact. You can also bring any question to the Monday, Wednesday, or Friday Q&A.",
+      q: "Can I share a room?",
+      a: "Yes. Many agents pair up with a teammate to split the cost. Post in the team chat to find a roommate.",
+    },
+    {
+      q: "Who do I ask if I have other questions?",
+      a: "Reach out to your upline, or check the official event site for full details.",
     },
   ],
 };
